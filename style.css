@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   }
+   
+   .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(245, 245, 251);
+    /* border-color: white; */
+    /* border: 1px solid rgb(252, 247, 247); */
+   }
+   
+   .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+   }
+   
+   input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(10, 10, 11);
+    border: 1px solid rgb(253, 252, 252);
+    color: white;
+   }
+   
+   button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(245, 245, 251);
+    background-color: rgb(5, 5, 6);
+    border: 1px solid rgb(252, 247, 247);
+   }
+   
+   .movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: rgb(39, 26, 39);
+    padding: 20px;
+   }
+   
+   .movie-card {
+    background-color: rgb(1, 1, 1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   }
+   
+   .movie-card img {
+    max-width: 100%;
+    border-radius: 5px;
+   }
+   
+   .movie-title {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: cursive;
+   }
+   
+   .movie-details {
+    font-size: 14px;
+    color: #555;
+   }
+   
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+    .search-bar {
+    flex-direction: column;
+    }
+   
+    input[type="text"], button {
+    width: 100%;
+    max-width: none;
+    }
+   }
+   
+   @media (max-width: 576px) {
+    .movies-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    }
+   
+    input[type="text"] {
+    font-size: 14px;
+    }
+   
+    button {
+    font-size: 14px;
+    padding: 8px 16px;
+    }
+   
+    .movie-title {
+    font-size: 16px;
+    }
+   
+    .movie-details {
+    font-size: 12px;
+    }
+   }
+
+   .header-buttons button {
+    background-color: rgba(0, 0, 0, 0.7); /* Light black background */
+    color: #f2c04f; /* Light yellow color for text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Adds rounded corners */
+    margin: 0 20px; /* Increase margin between buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+.header-buttons button:hover {
+    background-color: #f2c04f; /* Yellow background on hover */
+    color: black; /* Text color changes to black */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+

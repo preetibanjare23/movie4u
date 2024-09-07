@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Style Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://caragaleblog.wordpress.com/wp-content/uploads/2013/08/horror-collage.jpg);
+            color: #fff;
+            overflow: hidden;
+            
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('background.jpg'); /* Add a background image similar to Netflix */
+            background-size: cover;
+            background-position: center;
+            background-color: #000000bb;
+            /* opacity: 0.5; */
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e50914;
+            letter-spacing: 2px;
+        }
+
+        .language-signout {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .language-signout select {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 5px;
+            font-size: 1rem;
+        }
+
+        .language-signout button {
+            background-color: #e50914;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content button {
+            background-color: #e50914;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+       
+        span{
+            font-size: 45px;
+            font-weight: 800;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Movie<span >4</span>u</div>
+            <div class="content">
+            <h1>Unlimited movies</h1>
+            <p style="font-weight: bold;">For Unlimited Entertantment</p>
+            <a href="index1.html"><button>Wel-Come</button></a>
+        </div>
+    </div>
+
+</body>
+</html>

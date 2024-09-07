@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <nav>
+        <button id="home-page-btn">Home</button>
+        
+        <button id="favorites-page-btn">Favorites</button>
+    </nav> -->
+    <div class="header-buttons">
+        <button id="home-page-btn">Home</button>
+        <button id="favorites-page-btn">Favorites</button>
+    </div>
+    
+    
+    <div class="container" id="home-page">
+        <h1>Movie Hunt</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a movie...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="movies-container" class="movies-container"></div>
+    </div>
+
+    <div class="container" id="favorites-page" style="display: none;">
+        <h1>Favorites</h1>
+        <div id="favorites-container" class="movies-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
